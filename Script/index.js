@@ -27,7 +27,7 @@ toggle.addEventListener("click", toggler)
 function toggler() {
     const style = phoneNav.style.height;
     if (style == "0px") {
-        phoneNav.style.height = "125px"
+        phoneNav.style.height = "128.05px"
     }
     else {
         phoneNav.style.height = "0px"
@@ -46,4 +46,17 @@ function scrollFunction() {
             document.getElementById("navbar2").style.opacity = "0";
         }
     }
+}
+
+
+const blurredImageDiv = document.querySelector(".blurred-img")
+const img = blurredImageDiv.querySelector("img")
+function loaded() {
+  blurredImageDiv.classList.add("loaded")
+}
+
+if (img.complete) {
+  loaded()
+} else {
+  img.addEventListener("load", loaded)
 }
