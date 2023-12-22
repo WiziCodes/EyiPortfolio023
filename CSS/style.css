@@ -44,7 +44,7 @@
       position: absolute;
       inset: 0;
       animation: pulse 2.5s infinite;
-      background-color: rgba(255, 255, 255, 0.2);
+      background-color:rgba(0, 0, 0, 0.562);
   }
 
   @keyframes pulse {
@@ -54,7 +54,7 @@
       }
 
       50% {
-        background-color: rgba(255, 255, 255, 0.2);
+        background-color: rgba(0, 0, 0, 0.562);;
     }
 
       100% {
@@ -425,7 +425,7 @@
       flex-direction: column;
       padding: 40px 30px;
       background-color: white;
-      height: 150vh;
+      min-height: 50vh;
   }
 
   .boxB,
