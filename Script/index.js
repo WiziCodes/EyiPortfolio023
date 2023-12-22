@@ -12,7 +12,7 @@ blurredImage.forEach(div => {
     }
 })
 
-AOS.init(); 
+AOS.init();
 var typed = new Typed(".multipleTxt", {
     strings: ["UI/UX Designer", "Graphics Designer", "Brand Designer"],
     typeSpeed: 100,
@@ -21,15 +21,21 @@ var typed = new Typed(".multipleTxt", {
     loop: true
 })
 
+const responsive = {
+    480: {
+        nav: true,
+        dots: false,
+    }
+}
 $('.owl-carousel').owlCarousel({
     loop: true,
     autoplay: true,
     autoplayTimeout: 20000,
     items: 1,
-    nav: true,
-    dots: false,
+    dots: true,
+    nav: false,
     navText: [$(".owl-navigation .owl-nav-prev"), $(".owl-navigation .owl-nav-next")],
-    // responsive: true,
+    responsive: responsive,
     // navigationText:false
 })
 
