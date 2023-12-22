@@ -2,7 +2,7 @@ const blurredImage = document.querySelectorAll(".blurred-img")
 blurredImage.forEach(div => {
     const img = div.querySelector("img")
     function loaded() {
-        // div.classList.add("loaded")
+        div.classList.add("loaded")
     }
 
     if (img.complete) {
