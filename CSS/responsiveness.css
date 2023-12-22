@@ -407,7 +407,18 @@
         font-size: 25px;
     }
 
-    .feedBackCont .feed .picCont img {
+    .feedBackCont .feed .picCont{
+        width: 120px;
+        height: 120px;
+        border-radius: 75px;
+    }
+    .feedBackCont .feed .picCont img{
+        width: 100%;
+        height: 100%;
+        border-radius: 75px;
+   
+    }
+    .feedBackCont .blurred-img {
         width: 120px;
         height: 120px;
         border-radius: 75px;
@@ -466,7 +477,7 @@
 
     /* //contact */
     .contactBody {
-        background: url("../Pics/gencraft_image_1701777528800-1.png");
+        background: url("../Pics/tel.png");
         background-position: center;
         background-size: cover;
     }
@@ -686,11 +697,22 @@
         font-size: 25px;
     }
 
-    .feedBackCont .feed .picCont img {
+    .feedBackCont .feed .picCont{
         width: 100px;
         height: 100px;
+        border-radius: 50px;
     }
-
+    .feedBackCont .feed .picCont img{
+        width: 100%;
+        height: 100%;
+        border-radius: 50px;
+   
+    }
+    .feedBackCont .blurred-img {
+        width: 100px;
+        height: 100px;
+        border-radius: 50px;
+    }
     /* p */
     .feedBackCont .feed .writeupCont {
         font-size: 13px;

@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Titus Design</title>
     <link rel="stylesheet" href="./CSS/about.css">
     <link rel="stylesheet" href="./CSS/responsiveness.css">
     <link rel="stylesheet" href="./CSS/aos.css">
@@ -93,8 +93,8 @@
                         </p>
                     </div>
                 </div>
-                <div class="c">
-                    <img src="./Pics/IMG_3926.jpg">
+                <div class="c blurred-img" style="background-image: url(./Pics/eyi\ B.jpg);">
+                    <img src="./Pics/eyi.jpg">
                 </div>
 
             </div>
@@ -115,8 +115,8 @@
                         </p>
                     </div>
                 </div>
-                <div class="e">
-                    <img src="./Pics/gencraft_image_1701993759534-1.png" alt="" srcset="">
+                <div class="e blurred-img" style="background-image: url(./Pics/boy\ B.jpg);">
+                    <img src="./Pics/boy.png" alt="" srcset="">
                 </div>
             </div>
             <!-- 3 -->
@@ -136,8 +136,8 @@
                         </p>
                     </div>
                 </div>
-                <div class="g">
-                    <img src="./Pics/gencraft_image_1701993834850-1.png" alt="" srcset="">
+                <div class="g blurred-img" style="background-image: url(./Pics/engine\ B.jpg);">
+                    <img src="./Pics/engin.png" alt="" srcset="">
                 </div>
 
             </div>
@@ -159,8 +159,8 @@
                         </p>
                     </div>
                 </div>
-                <div class="i">
-                    <img src="./Pics/gencraft_image_1701584217982-1.png" alt="" srcset="">
+                <div class="i blurred-img" style="background-image: url(./Pics/man\ 1\ B.jpg);">
+                    <img src="./Pics/man 1.png" alt="" srcset="">
                 </div>
             </div>
         </div>
@@ -215,6 +215,19 @@
                 phoneNav.style.height = "0px"
             }
         }
+        const blurredImage = document.querySelectorAll(".blurred-img")
+        blurredImage.forEach(div => {
+            const img = div.querySelector("img")
+            function loaded() {
+                // div.classList.add("loaded")
+            }
+
+            if (img.complete) {
+                loaded()
+            } else {
+                img.addEventListener("load", loaded)
+            }
+        })
     </script>
 
 </body>

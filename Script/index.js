@@ -1,3 +1,17 @@
+const blurredImage = document.querySelectorAll(".blurred-img")
+blurredImage.forEach(div => {
+    const img = div.querySelector("img")
+    function loaded() {
+        // div.classList.add("loaded")
+    }
+
+    if (img.complete) {
+        loaded()
+    } else {
+        img.addEventListener("load", loaded)
+    }
+})
+
 AOS.init(); 
 var typed = new Typed(".multipleTxt", {
     strings: ["UI/UX Designer", "Graphics Designer", "Brand Designer"],
@@ -46,17 +60,4 @@ function scrollFunction() {
             document.getElementById("navbar2").style.opacity = "0";
         }
     }
-}
-
-
-const blurredImageDiv = document.querySelector(".blurred-img")
-const img = blurredImageDiv.querySelector("img")
-function loaded() {
-  blurredImageDiv.classList.add("loaded")
-}
-
-if (img.complete) {
-  loaded()
-} else {
-  img.addEventListener("load", loaded)
 }
